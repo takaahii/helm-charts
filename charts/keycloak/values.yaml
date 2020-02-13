@@ -212,6 +212,11 @@ keycloak:
     labels: {}
     # key: value
 
+    ## List of IP addresses at which the controller services are available
+    ## Ref: https://kubernetes.io/docs/user-guide/services/#external-ips
+    ##
+    loadBalancerIP: ""
+
     ## ServiceType
     ## ref: https://kubernetes.io/docs/user-guide/services/#publishing-services---service-types
     type: ClusterIP
